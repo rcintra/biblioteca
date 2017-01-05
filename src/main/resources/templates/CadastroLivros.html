@@ -27,7 +27,7 @@
 		<div class="row">
 			<div class="col-md-4" th:each="livro : ${livros}">
 				<h2 th:text="${livro.titulo}">Titulo do livro</h2>
-				<h4 th:text="${autor}">Autor do livro</h4>
+				<h4 th:text="${livro.autor}">Autor do livro</h4>
 				<p th:text="${livro.nota}"> Nota ou comentario</p>
 			</div>
 		</div>
