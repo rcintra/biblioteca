@@ -19,7 +19,7 @@ public class LivrosController {
 
 	@GetMapping
 	public ModelAndView home() {
-		ModelAndView mv = new ModelAndView("CadastroLivros");
+		ModelAndView mv = new ModelAndView("CadastroLivros", "livro", new Livro());
 		mv.addObject("livros", livros.findAll());
 		return mv;
 	}
